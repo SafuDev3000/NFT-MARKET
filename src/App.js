@@ -771,7 +771,7 @@ export default function App() {
   // Get NFTs
   async function getNFTs(startIndex) {
     const contract = new Web3EthContract(ABI, NFTCONTRACT);
-    const address = blockchain.account;
+    const address = account;
 
     let totalNFTs = 0;
     let nfts = [];
